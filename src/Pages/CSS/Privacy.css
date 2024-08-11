@@ -1,0 +1,16 @@
+.Privacy{
+    margin-top: 50px;
+   
+}
+.Privacy h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+   
+}
+.Privacy ul {
+    margin-bottom: 20px;
+}
+
+

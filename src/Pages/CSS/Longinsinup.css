@@ -1,0 +1,105 @@
+.login-sinup{
+    width: 100%;
+    height: 80vh;
+    background: #fce3fe;
+    padding-top: 50px;
+}
+.loginsinpucontainer{
+    width: 500px;
+    background: white;
+    margin: auto;
+    padding: 40px 60px;
+}
+.loginsinpucontainer h1{
+    font-size: 30px;
+}
+.loginsinup-fieldsloginsinup-fields{
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    margin-top: 30px;
+}
+.loginsinup-fieldsloginsinup-fields input{
+    height: 50px;
+    width: 100%;
+    padding-left: 20px;
+    border: 1px solid #c9c9c9;
+    outline: none;
+    color: #5c5c5c;
+    font-size: 18px;
+}
+.loginsinpucontainer button{
+    width: 100%;
+    height: 50px;
+    background: #ff4141;
+    margin-top: 30px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+.loginsinup-login{
+    margin-top: 20px;
+    color: #5c5c5c;
+    font-size: 18px;
+    font-weight: 500;
+}
+.loginsinup-login span{
+    color: #ff4141;
+    font-weight: 600;
+}
+.loginagree{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    gap: 20px;
+    color: #5c5c5c;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media(max-width:1280px){
+    .login-sinup{
+        padding-top: 50px;
+    }
+    .loginsinpucontainer{
+        width: auto;
+        max-width: 500px; 
+        max-height: 500px;
+    }
+    .loginsinpucontainer h1{
+        margin: 10px 0px;
+    }
+    .loginsinup-fieldsloginsinup-fields{
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .loginsinup-fieldsloginsinup-fields input{
+        height: 65px;
+        width: 93%;
+    }
+    .loginsinpucontainer button{
+        width: 100%;
+    }
+    .loginsinup-login{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:800px){
+    .loginsinpucontainer{
+        padding: 20px 30px;
+    }
+    .loginsinpucontainer h1{
+        font-size: 24px;
+    }
+    .loginsinup-fieldsloginsinup-fields{
+        margin-top: 20px;
+    }
+    .loginsinup-fieldsloginsinup-fields input{
+        height: 50px;
+    }
+    .loginsinpucontainer button{
+        height: 50px;
+        font-size:16px;
+    }
+}

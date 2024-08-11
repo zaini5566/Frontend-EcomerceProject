@@ -1,0 +1,51 @@
+.hero_section{
+     height: 100%;
+      /* display: flex;
+      background: linear-gradient(180deg, #fde1ff, #e1ffea22); */
+}
+.hero_section img{
+    width: 100%;
+}
+/* .hero_left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+} 
+ h2{
+    color: #090909;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 11%;
+}
+h1{
+    font-size: 5rem;
+    line-height: 1.1;
+    font-weight: bold;
+}
+.handimg{
+    display: flex;
+    align-items: center;
+}
+.hero_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 45%;
+    height: 10%;
+    border-radius: 75px;
+    margin-top: 10%;
+    background-color: #ff4141;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+} */
+/* .hero_right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+} */

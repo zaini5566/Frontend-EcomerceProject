@@ -1,0 +1,144 @@
+.cartitemsz{
+margin: 50px 50px;
+}
+.cartitems hr{
+    height: 3px;
+    background: #e2e2e2;
+    border: 0;
+}
+.cartitemformatemain{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 75px;
+    padding: 20px 0px;
+    color: #454545;
+    font-size: 10px;
+    font-weight: 600;
+
+}
+.carticonporducticon {
+    font-size: 17ox;
+    font-weight: 500;
+}
+.carticonporducticon{
+    height:  62px; 
+}
+.cartitemremove{
+    width: 15px;
+    margin: 0px 40px;
+    cursor: pointer;
+}
+.cartitemquty{
+    width: 65px;
+    height: 50px;
+    border: 2px solid #ebebeb;
+    background: #fff;
+
+}
+.cartitems-down{
+    display: flex;
+    margin-top: 100px ;
+    
+}
+.cartitemTotal{
+ flex: 1;
+ display: flex;
+ flex-direction: column;
+ margin-right: 200px;
+ gap: 20px;
+}
+
+.cartitem-total-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+.cartitemTotal button{
+    width: 263px;
+    height: 58px;
+    outline: none;
+    border: none;
+    background: #ff5a5a;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.cartitem-promocode{
+    flex: 1;
+    font-size: 16px;
+    font-weight: 500;
+}
+.cartitem-promocode p{
+    color: #555;
+}
+.cartitempromo-box{
+    width: 504px;
+    margin-top: 15px;
+    padding-left: 20px;
+    height: 58px;
+    background: #eaeaea;
+    
+}
+.cartitempromo-box input{
+border: none;
+outline: none;
+background: transparent;
+font-size: 16px;
+width: 330px;
+height: 50px;
+}
+.cartitempromo-box button{
+width: 170px;
+height: 58px;
+font-size: 16px;
+background: black;
+color: white;
+cursor: pointer;
+}
+
+@media(max-width:1280px){
+     .cartitems{
+        margin: 60px 50px; 
+     }
+     .cartitemformatemain{
+        grid-template-columns: 0.5fr 3fr 0.5fr 0.5fr 0.5fr 0.5fr ;
+        gap: 20px;
+        padding: 15px 0px;
+        font-size: 15px;
+     }
+     .carticonporducticon{
+        height: 50px;
+     }
+     .cartitemremove{
+        margin: auto;
+     }
+
+     .cartitemquty{
+        width: 40px;
+        height: 30px;
+     }
+     .cartitems-down{
+        margin: 80px 0px;
+        flex-direction: column;
+         gap: 80px;
+
+     }
+     .cartitemTotal{
+        margin: 0px;
+     }
+     
+}
+
+@media(max-width:500px){
+   
+    .cartitemformatemain{
+        display: none;
+        grid-template-columns: 0.5fr 3fr 0.5fr;
+        gap: 10px;
+    }
+    .cartitemfrmate{
+        display: grid;
+    }
+}
