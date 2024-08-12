@@ -60,7 +60,7 @@ useEffect(() => {
         <div className="nav-cart-count">{gettotalcartitems()}</div>
         {isLoggedIn ? (
          <div className="user-menu">
-         <img className="user_img" src={usericon} onClick={handleDropdownToggle} alt="User" width="55px" height="35px" />
+         <img className="user_img" src={usericon} onClick={handleDropdownToggle} alt="User" width="55px" height="30px" />
          {showDropdown && (
   <div ref={dropdownRef} className="user-dropdown">
     <ul className="user-logout">

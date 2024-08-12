@@ -13,8 +13,6 @@ function Footer() {
             <p>SHOOPER</p>
         </div>
         <ul className="footer_links">
-            <li>Conpany</li>
-            <li>Products</li>
          <li> <Link to="/Privacy" className="custom-link" >Privacy</Link></li>
             <li>About</li>
             <li>Contact</li>
