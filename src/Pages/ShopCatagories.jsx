@@ -9,14 +9,14 @@ function ShopCatagories(props) {
   return (
     <div className='shop-Catagories' >
         <img className='shopcatagory-banner' src={props.banner} alt="" />
-        <div className="shopcatagroy-indexsosrt">
+        {/* <div className="shopcatagroy-indexsosrt">
           <p>
             <span>Showig 1-12</span> out of 36
               </p>
               <div className="shopcatagori-sort">
                 sort by <img src={dropdown_icon} alt="" />
               </div>
-        </div>
+        </div> */}
         <div className="shpcatagories_products">
           {all_Product.map((item,i) => {
             if(props.category===item.category) {
