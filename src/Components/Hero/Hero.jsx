@@ -9,7 +9,7 @@ import banner from '../Assets/Banner.png'
 function Hero() {
   return (
     <div className='hero_section'>
-    <img src='https://res.cloudinary.com/dzmefxevu/image/upload/v1725546799/products/product_1725546799069.jpg' alt="" />
+    <img src='https://res.cloudinary.com/dzmefxevu/image/upload/v1725547483/products/product_1725547481818.jpg' alt="" />
         {/* <div className="hero_left">
             
                 <h2>NEW ARRIVALS ONLY</h2>                
