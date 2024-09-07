@@ -44,6 +44,13 @@ function Navbar() {
     };
   }, []);
 
+  // Function to handle route change and close the menu
+  const handleMenuClick = (route) => {
+    setMenu(route); // Set active menu item
+    menuRef.current.classList.remove('nav-menu-visible'); // Close the menu
+    navigate(route); // Navigate to the route
+  };
+
   return (
     <div className='navbar'>
       <img src={dropdown} alt="" className='navdropdpen' onClick={dropdown_toggle} />
@@ -52,21 +59,21 @@ function Navbar() {
         <Link to='/'><p>Shoper</p></Link>
       </div>
       <ul ref={menuRef} className='nav-menue'>
-        <li onClick={() => setMenu("shop")}> 
+        <li onClick={() => handleMenuClick("/")}> 
           <Link style={{ textDecoration: 'none', color: 'black' }} to="/">Shop</Link> 
-          {menu === "shop" ? <hr /> : null} 
+          {menu === "/" ? <hr /> : null} 
         </li>
-        <li onClick={() => setMenu("Men")}> 
+        <li onClick={() => handleMenuClick("/Men")}> 
           <Link style={{ textDecoration: 'none', color: 'black' }} to="/Men">Men</Link> 
-          {menu === "Men" ? <hr /> : null}
+          {menu === "/Men" ? <hr /> : null}
         </li>
-        <li onClick={() => setMenu("Women")}> 
+        <li onClick={() => handleMenuClick("/Women")}> 
           <Link style={{ textDecoration: 'none', color: 'black' }} to="/Women">Women</Link> 
-          {menu === "Women" ? <hr /> : null}
+          {menu === "/Women" ? <hr /> : null}
         </li>
-        <li onClick={() => setMenu("kids")}> 
+        <li onClick={() => handleMenuClick("/Kids")}> 
           <Link style={{ textDecoration: 'none', color: 'black' }} to="/Kids">Kids</Link> 
-          {menu === "kids" ? <hr /> : null}
+          {menu === "/Kids" ? <hr /> : null}
         </li>
       </ul>
       <div className="nav-login">
