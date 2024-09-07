@@ -264,13 +264,14 @@
   
     .nav-menue{
         display: none;
-        height: 80px;
-        width: 100vh;
+        height: 70px;
+        width: 90vw;
         position: absolute;
         justify-content: start;
-        padding-left: 100px;
+        padding-left: 20px;
         background-color: white;
         top: 70px;
+        margin-left: 0px;
     }
     .nav-login{
         margin-right: -50px;
