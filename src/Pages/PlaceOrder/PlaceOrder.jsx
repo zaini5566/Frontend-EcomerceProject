@@ -11,9 +11,6 @@ const PlaceOrder = () => {
     const {getTotalAmount,all_Product,cartItem,Romovefromcart,clearCart, url } = useContext(ShopContext);
     const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem('auth-token') !== null);
     
-  
-
-
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
@@ -80,8 +77,8 @@ const PlaceOrder = () => {
             <div className={style.place_order_left}>
                 <p className={style.title}>Delivery Information</p>
                 <div className={style.multi_fields}>
-                    <input type="text" name="firstName" required placeholder='First name' onChange={handleInputChange} />
-                    <input type="text" name="lastName" required placeholder='Last name' onChange={handleInputChange} />
+                    <input type="text" name="firstName"  placeholder='First name' onChange={handleInputChange} />
+                    <input type="text" name="lastName"  placeholder='Last name' onChange={handleInputChange} />
                 </div>
                 <input type="email" name="email" placeholder='Email address' onChange={handleInputChange} />
                 <input type="text" name="street" placeholder='Street' onChange={handleInputChange} />
@@ -93,7 +90,8 @@ const PlaceOrder = () => {
                     <input type="text" name="zipCode" placeholder='Zip Code' onChange={handleInputChange} />
                     <input type="text" name="country" placeholder='Country' onChange={handleInputChange} />
                 </div>
-                <input type="text" name="phone" placeholder='Phone' onChange={handleInputChange} />
+                <input type="text" name="phone" placeholder='Phone Number' onChange={handleInputChange} />
+               <div className={style.none}> </div> 
             </div> 
 
             <div className={style.place_order_right}>    

@@ -12,6 +12,14 @@
     
 }
 
+
+.none{
+    margin-top: 8px;
+    border: 2px solid black;
+    height: 10px;
+   
+}
+
 .place_order_left .title{
     font-size: 30px;
     font-weight: 600;
