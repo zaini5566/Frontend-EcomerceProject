@@ -33,6 +33,45 @@ const PlaceOrder = () => {
     };
 
     const handlePlaceOrder = () => {
+
+        if (!formData.firstName.trim()) {
+            document.getElementById('firstname').style = "border: 2px solid red"
+            return;  // Stop form submission if validation fails
+        }
+        if (!formData.email.trim()) {
+            document.getElementById('email').style = "border: 2px solid red"
+            return;  // Stop form submission if validation fails
+        }
+        if (!formData.street.trim()) {
+            document.getElementById('street').style = "border: 2px solid red"
+            return;  // Stop form submission if validation fails
+        }
+        if (!formData.city.trim()) {
+            document.getElementById('city').style = "border: 2px solid red"
+            return;  // Stop form submission if validation fails
+        }
+        if (!formData.state.trim()) {
+            document.getElementById('state').style = "border: 2px solid red"
+            return;  // Stop form submission if validation fails
+        }
+        if (!formData.zipCode.trim()) {
+            document.getElementById('zipCode').style = "border: 2px solid red"
+            return;  // Stop form submission if validation fails
+        }
+        if (!formData.country.trim()) {
+            document.getElementById('country').style = "border: 2px solid red"
+            return;  // Stop form submission if validation fails
+        }
+        if (!formData.phone.trim()) {
+            document.getElementById('phone').style = "border: 2px solid red"
+            return;  // Stop form submission if validation fails
+        } 
+
+
+     
+
+          
+
         if (!isLoggedIn) {
             navigate('/login');
         } else {
@@ -77,20 +116,20 @@ const PlaceOrder = () => {
             <div className={style.place_order_left}>
                 <p className={style.title}>Delivery Information</p>
                 <div className={style.multi_fields}>
-                    <input type="text" name="firstName"  placeholder='First name' onChange={handleInputChange} />
+                    <input type="text" id='firstname' name="firstName"  placeholder='First name' onChange={handleInputChange} />
                     <input type="text" name="lastName"  placeholder='Last name' onChange={handleInputChange} />
                 </div>
-                <input type="email" name="email" placeholder='Email address' onChange={handleInputChange} />
-                <input type="text" name="street" placeholder='Street' onChange={handleInputChange} />
+                <input type="email" id='email' name="email" placeholder='Email address' onChange={handleInputChange} />
+                <input type="text" id='street' name="street" placeholder='Address' onChange={handleInputChange} />
                 <div className={style.multi_fields}>
-                    <input type="text" name="city" placeholder='City' onChange={handleInputChange} />
-                    <input type="text" name="state" placeholder='State' onChange={handleInputChange} />
+                    <input type="text" id='city' name="city" placeholder='City' onChange={handleInputChange} />
+                    <input type="text" id='state' name="state" placeholder='State' onChange={handleInputChange} />
                 </div>
                 <div className={style.multi_fields}>
-                    <input type="text" name="zipCode" placeholder='Zip Code' onChange={handleInputChange} />
-                    <input type="text" name="country" placeholder='Country' onChange={handleInputChange} />
+                    <input type="text" id='zipCode' name="zipCode" placeholder='Zip Code' onChange={handleInputChange} />
+                    <input type="text" id='country' name="country" placeholder='Country' onChange={handleInputChange} />
                 </div>
-                <input type="text" name="phone" placeholder='Phone Number' onChange={handleInputChange} />
+                <input type="Number" name="phone" id='phone' placeholder='Phone Number' onChange={handleInputChange} />
                <div className={style.none}> </div> 
             </div> 
 
