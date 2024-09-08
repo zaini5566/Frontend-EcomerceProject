@@ -9,6 +9,19 @@ import { useNavigate } from 'react-router-dom';
 function Cartitems() {
     const {getTotalAmount,all_Product,cartItem,Romovefromcart } = useContext(ShopContext);
     const    navigate = useNavigate (); 
+
+    const proceed = () => {
+        // Check if there are any items in the cart
+        const hasItemsInCart = all_Product.some((e) => cartItem[e.id] > 0);
+    
+        if (!hasItemsInCart) {
+            alert("Cart is Empty");
+        } else {
+            navigate('/order');
+        }
+    }
+
+
     return (
         <div className='cartitemsz'>
 
@@ -34,16 +47,10 @@ function Cartitems() {
                         </div>
                         <hr/>
                           </div>
-                       
-                  
-
                 }
                 return null; 
             })} 
          
-        
-         
-        
             <div className="cartitems-down">
                 <div className="cartitemTotal">
                     <h3>Cart Totals</h3>
@@ -63,7 +70,7 @@ function Cartitems() {
                                 <h3>Total</h3>
                                 <h3>${getTotalAmount()}</h3>
                               </div>
-                        <button onClick={()=>navigate('/order')}>Proceed to Chackout</button>
+                        <button onClick={proceed}>Proceed to Chackout</button>
                     </div>
                 </div>
                     {/* <div className="cartitem-promocode">
