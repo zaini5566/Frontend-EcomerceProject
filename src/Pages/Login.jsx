@@ -8,9 +8,9 @@ function Login() {
     const [state, setState] = useState("Login"); 
 
     const [formData, setFormDta] = useState({
-      username:" ", 
+      username:"", 
       password:"",
-      email:" "
+      email:""
     })
     const changeHandler = (e)=>{
        setFormDta({...formData,[e.target.name]:e.target.value})
