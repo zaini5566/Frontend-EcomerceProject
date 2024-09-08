@@ -19,7 +19,7 @@ function Footer() {
         </ul>
         <div className="Foooter_social_links">
             <div className="footer_icon_container">
-                <img src={Istagram_logo} alt="" />
+               <a href="https://www.instagram.com/jerry16718?igsh=MTh3cmw0bXN1aG93bA=="><img src={Istagram_logo} alt="" /></a> 
             </div>
             <div className="footer_icon_container">
                 <img src={pintrest_logo} alt="" />
