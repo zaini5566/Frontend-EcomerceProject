@@ -25,7 +25,7 @@ function Footer() {
                 <img src={pintrest_logo} alt="" />
             </div>
             <div className="footer_icon_container">
-                <img src={watsapp_logo} alt="" />
+              <a href="https://wa.me/message/5IHGCB5KLOHDD1"><img src={watsapp_logo} alt="" /></a>  
             </div>
             
         </div>
