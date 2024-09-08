@@ -59,7 +59,7 @@ function Login() {
       <div className="loginsinpucontainer">
         <h1>{state}</h1>
         <div className="loginsinup-fieldsloginsinup-fields">
-          {state=== "Sign Up"? <input  name= 'username' value={formData.username} onChange={changeHandler} type="text" placeholder='Your Name' />: <></>}
+          {state=== "Sign Up"? <input  name= 'username' placeholder='User Name' value={formData.username} onChange={changeHandler} type="text" />: <></>}
           <input name='email' value={formData.email} onChange={changeHandler} type="email"  placeholder='Email Address'/>
           <input name='password' value={formData.password} onChange={changeHandler} type="password"  placeholder='Password'/>
         </div>
